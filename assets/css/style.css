@@ -54,7 +54,7 @@ body {
   margin-bottom: 73px;
 }
 .cards__item:first-child {
-  background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8) ),url('./assets/images/red-car.png') center center/cover no-repeat;
+  background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8) ),url('/assets/images/red-car.png') center center/cover no-repeat;
   flex-basis: 740px;
   display: flex;
   flex-direction: column;
