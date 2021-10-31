@@ -1,2 +1,80 @@
 @import url('fonts.css');
 /* font-family: 'Neue Hans Kendrick', sans-serif; */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Neue Hans Kendrick', sans-serif;
+  font-size: 22px;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background: #E2E7EC;
+}
+._container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 90px;
+}
+.cards__item:first-child {
+  background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8) ),url(/assets/images/red-car.png) center center/cover no-repeat;
+  flex-basis: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  color: #fff;
+}
+.cards__item>h1 {
+  text-shadow: 1px 1px 0 #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.cards__item>time {
+  font-size: 13px;
+  line-height: 2.3;
+  opacity: .5 ;
+}
+.cards__item:not(:first-child) {
+  flex-basis: 360px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.cards__item {
+  min-height: 540px;
+  background: #fff;
+}
