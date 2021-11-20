@@ -1,0 +1,145 @@
+@import url('fonts.css');
+/* font-family: 'Neue Hans Kendrick', sans-serif; */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+html,
+body {
+  height: 100%;
+  font-family: 'Neue Hans Kendrick', sans-serif;
+  font-size: 22px;
+  color: #1D1D1D;
+}
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background: #E2E7EC;
+}
+._container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 90px;
+  margin-bottom: 73px;
+}
+.cards__item:first-child {
+  background: linear-gradient( rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.8) ),url('../images/red-car.png') center center/cover no-repeat;
+  flex-basis: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+  color: #fff;
+}
+.cards__item>h1 {
+  text-shadow: 1px 1px 0 #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.cards__item time {
+  font-size: 13px;
+  line-height: 2.3;
+  text-transform: uppercase;
+  opacity: .5 ;
+  margin-bottom: 8px;
+}
+.cards__item:not(:first-child) {
+  flex-basis: 360px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+.cards__item {
+  min-height: 540px;
+  background: #fff;
+  transition: .3s;
+}
+.cards__item:hover {
+  transform: translate(5px, -5px);
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.cards__images {
+  height: 251px;
+}
+.cards__images>img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.cards__info {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100% - 251px);
+  padding: 28px;
+}
+.cards__text {
+  flex: 1 1 auto;
+}
+.cards__title {
+  font-size: 22px;
+  line-height: 1.3;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 #1D1D1D;
+}
+.cards__author {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+.cards__author img {
+  object-fit: cover;
+}
+.loading {
+  font-size: 13px;
+  color: #99a5b0;
+  text-shadow: 1px 1px 0 #99a5b0;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 50px;
+}
+.loading i {
+  font-size: 28px;
+  animation: spin 3s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading>span {
+  margin-left: 12px;
+}
